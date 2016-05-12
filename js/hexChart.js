@@ -51,7 +51,7 @@ function hexChart() {
                 .attr('class', 'hexagon')
                 .attr('d', hexbin.hexagon())
                 .attr('trasnform', function(d) { 
-                    return 'translate(' + d.x + ',' + 'd.y' + ')'; 
+                    return 'translate(' + d.x + ',' + d.y + ')'; 
                 })
                 .style('fill', function(d) { return color(d.length); });
         });
